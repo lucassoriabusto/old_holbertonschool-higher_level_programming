@@ -5,6 +5,6 @@ def print_last_digit(number):
         np = number % -10
         print(np, end="")
         return np
-    else:
+    elif: number >= 0:
         print(number % 10, end="")
         return number % 10
