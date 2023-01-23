@@ -6,4 +6,4 @@ def print_last_digit(number):
         return np
     else:
         print(number % 10, end="")
-    return number % 10
+        return number % 10
