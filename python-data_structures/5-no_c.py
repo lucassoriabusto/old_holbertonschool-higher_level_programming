@@ -1,4 +1,4 @@
-#!/usr/bin/env python3i
+#!/usr/bin/env python3
 def no_c(my_string):
     new_string = ""
     for n in my_string:
