@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
     if sentence is None:
-        return [len(sentence), None]
+        new_tupla = len(sentence), None
+        return new_tupla
     else:
-        return [len(sentence), sentence[0]]
+        new_tupla = len(sentence), sentence[0]
+        return new_tupla
