@@ -15,7 +15,7 @@ class Square:
     def size(self):
         return self.__size
     """@size.setter:
-        Permite modificar los atributos privados""" 
+        Permite modificar los atributos privados"""
     @size.setter
     def size(self, value):
         if type(value) != int:
