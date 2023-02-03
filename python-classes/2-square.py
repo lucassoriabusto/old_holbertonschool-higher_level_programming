@@ -11,12 +11,12 @@ class Square:
         """__init__:
             the method for initializing the attributes of the class
 
-            type: 
+            type:
             it returns the type of the object
 
             raise:
-            generates exceptions and provides the name of the error/exception"""
-        
+            generates exceptions and provides the name
+            of the error/exception"""
         if type(size) != int:
             raise TypeError("size must be an integer")
 
