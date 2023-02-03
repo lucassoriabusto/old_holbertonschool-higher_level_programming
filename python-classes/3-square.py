@@ -3,11 +3,10 @@
 
 
 class Square:
-    pass
+    """ Write a class Square that defines a square
+        as private instance attribute"""
 
     def __init__(self, size=0):
-        """ Write a class Square that defines a square
-            as private instance attribute"""
         if type(size) != int:
             raise TypeError("size must be an integer")
         if size < 0:
