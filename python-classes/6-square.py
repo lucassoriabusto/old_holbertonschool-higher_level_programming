@@ -7,14 +7,13 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         self.__position = position
-
+        """Comprueba si los valore de la tupla posición son validos"""
         if len(self.__position) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         if type(self.__position[0]) != int or type(self.__position[1]) != int:
              raise TypeError("position must be a tuple of 2 positive integers")
         if self.__position[0] < 0 or self.__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-
     """Returns the area of a square"""
     def area(self):
         return self.__size ** 2
@@ -32,9 +31,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-
     """Prints a square at a given position"""
-    
     def my_print(self):
         if self.__size == 0:
             print()
