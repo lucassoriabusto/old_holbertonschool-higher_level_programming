@@ -25,22 +25,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    @property
-    def position(self):
-        """ position getter"""
-        return (self.__position)
-
-    @position.setter
-    def position(self, position):
-        """ position setter"""
-        if (not isinstance(position, tuple) or len(position) != 2 or
-                not all((isinstance(n, int) and n >= 0) for n in position)):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__position = position
-
-
-
     """Prints a square at a given position"""
     
     def my_print(self):
