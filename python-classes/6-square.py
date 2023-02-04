@@ -11,7 +11,7 @@ class Square:
         if len(self.__position) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         if type(self.__position[0]) != int or type(self.__position[1]) != int:
-             raise TypeError("position must be a tuple of 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         if self.__position[0] < 0 or self.__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
     """Returns the area of a square"""
@@ -45,12 +45,13 @@ class Square:
                 for y in range(self.__size):
                     print("#", end="")
                 print("")
-    
+    """@property:
+        Permite axceder los atributos privados como si fueran públicos"""
     @property
     def position(self):
         return self.__position
-
-
+    """@position.setter:
+        Permite modificar los atributos privados"""
     @position.setter
     def position(self, value):
 
