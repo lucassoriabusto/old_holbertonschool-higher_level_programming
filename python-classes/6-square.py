@@ -51,7 +51,7 @@ class Square:
 
         if type(size.__position) != tuple or type(value) != int:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if value[0] == "3" or value[1] = "3":
+        if value[0] == "3" or value[1] == "3":
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
