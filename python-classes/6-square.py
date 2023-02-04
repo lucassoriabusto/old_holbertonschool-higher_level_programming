@@ -24,7 +24,9 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
     """Prints a square at a given position"""
+    
     def my_print(self):
         if self.__size == 0:
             print()
@@ -45,7 +47,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if len(value) == 2 and value[0] and value[1] >= 0:
+        if len(self.__value) == 2 and self.__value[0] and self.__value[1] >= 0:
             self.__position = position
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
