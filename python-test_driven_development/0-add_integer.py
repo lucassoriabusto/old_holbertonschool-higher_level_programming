@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Write a function that adds 2 integers."""
+
+
 def add_integer(a, b=98):
     """Check that a or b is an int or float."""
     if type(a) != int and type(a) != float:
