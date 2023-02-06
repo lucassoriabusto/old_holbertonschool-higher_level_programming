@@ -12,10 +12,8 @@ def matrix_divided(matrix, div):
     """Each row of the matrix must be of the same size"""
     if len(matrix[0]) != len(matrix[1]):
         raise TypeError("Each row of the matrix must have the same size")
-    """"""
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
-    """"""
     if div == 0:
         raise ZeroDivisionError("division by zero")
     """function that divides a matrix and rounded to 2 decimal places"""
