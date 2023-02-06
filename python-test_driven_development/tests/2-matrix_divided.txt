@@ -15,7 +15,16 @@ Using ``matrix_divided``
 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
 
->>> matrix_divided(len(matrix[0]) != len(matrix[1]))
+>>> matrix = [[1, 2, 3], [4, 5]]
+
+>>> matrix_divided(matrix, 2)
 Traceback (most recent call last):
 ...
-TypeError: matrix_divided() missing 1 required positional argument: 'div'
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix = [[1, 2, 3], [4, "string", 6]]
+
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
