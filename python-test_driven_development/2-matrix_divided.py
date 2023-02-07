@@ -19,6 +19,6 @@ def matrix_divided(matrix, div):
     """function that divides a matrix and rounded to 2 decimal places"""
     new_matrix = []
     for n in matrix:
-        for i in n:
-            new_matrix.append(round(i / div, 2))
+            matrix = list(map(lambda x: round(x/div, 2), n))
+            new_matrix.append(matrix)
     return new_matrix
