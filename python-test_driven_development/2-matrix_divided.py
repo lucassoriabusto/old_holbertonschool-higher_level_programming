@@ -7,7 +7,7 @@ def matrix_divided(matrix, div):
     for n in (matrix):
         for i in n:
             if type(i) != int and type(i) != float:
-                raise TypeError("matrix must be ai matrix \
+                raise TypeError("matrix must be a matrix \
 (list of lists) of integers/floats")
     """Each row of the matrix must be of the same size"""
     if len(matrix) > 1:
