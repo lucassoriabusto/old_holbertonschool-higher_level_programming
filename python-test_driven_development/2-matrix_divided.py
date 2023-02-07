@@ -10,9 +10,8 @@ def matrix_divided(matrix, div):
                 raise TypeError("matrix must be a matrix \
                         (list of lists) of integers/floats")
     """Each row of the matrix must be of the same size"""
-    if len(matrix) > 1:
-        if len(matrix[0]) != len(matrix[1]):
-            raise TypeError("Each row of the matrix must have the same size")
+    if len(matrix[0]) != len(matrix[1]):
+        raise TypeError("Each row of the matrix must have the same size")
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
     if div == 0:
@@ -20,6 +19,6 @@ def matrix_divided(matrix, div):
     """function that divides a matrix and rounded to 2 decimal places"""
     new_matrix = []
     for n in matrix:
-            matrix = list(map(lambda x: round(x/div, 2), n))
-            new_matrix.append(matrix)
+        for i in n:
+            new_matrix.append(round(i / div, 2))
     return new_matrix
