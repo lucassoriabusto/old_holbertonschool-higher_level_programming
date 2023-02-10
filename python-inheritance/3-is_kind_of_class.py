@@ -4,7 +4,6 @@
 
 def is_kind_of_class(obj, a_class):
     """isinstance:
-    Returns True if the specified object is of the specified type,
-    otherwise False
+    This function returns True if the given class is the subclass of given class
     """
     return isinstance(obj, a_class)
