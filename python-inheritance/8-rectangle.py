@@ -14,6 +14,8 @@ class BaseGeometry:
             raise Exception(f"{name} must be greater than 0")
 
 class Rectangle(BaseGeometry):
+    """Defines a class Rectangle that inherits the methods
+    and properties of class BaseGeometry"""
     def __init__(self, width, height):
         self.__width = width
         self.__height = height 
