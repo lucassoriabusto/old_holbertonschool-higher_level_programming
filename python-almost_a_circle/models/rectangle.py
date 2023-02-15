@@ -12,7 +12,8 @@ class Rectangle(Base):
         """Superclass"""
         super().__init__(id)
 
-        """Private instance attributes, each with its own public getter and setter"""
+        """Private instance attributes, each with
+        its own public getter and setter"""
         self.__width = width
         self.__height = height
         self.__x = x
