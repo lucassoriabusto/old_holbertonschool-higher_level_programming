@@ -2,17 +2,8 @@
 """Write the class Rectangle that inherits from Base"""
 
 
-class Base:
-    """Private class attribute"""
-    __nb_objects = 0
+from models.base import Base
 
-    def __init__(self, id=None):
-        """d"""
-        if id is not None:
-            self.id = id
-        else:
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
 
 class Rectangle(Base):
     """Defines a class Rectangle that inherits from Base"""
