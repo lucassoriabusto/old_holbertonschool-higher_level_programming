@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""d"""
+"""Defines a class Rectangle that inherits from Base"""
 
 
 class Base:
@@ -19,6 +19,8 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Superclass"""
         super().__init__(id)
+
+        """Private instance attributes, each with its own public getter and setter"""
         self.__width = width
         self.__height = height
         self.__x = x
