@@ -84,5 +84,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """Update the class Rectangle
-        Con self.variable accedes al valor de la variable para poder retornarlo"""
-        return(f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
+        Con self.variable accedes al valor de la
+        variable para poder retornarlo"""
+        return(f"[Rectangle] ({self.id}) {self.x}/{self.y}
+        - {self.width}/{self.height}")
