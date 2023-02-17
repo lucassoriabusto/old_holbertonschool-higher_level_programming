@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""d"""
 
 from models.rectangle import Rectangle
 
