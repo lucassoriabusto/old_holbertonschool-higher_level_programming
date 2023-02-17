@@ -77,7 +77,12 @@ class Rectangle(Base):
     def display(self):
         """Prints in stdout the Rectangle
         instance with the character #"""
+        """self.x/y contiene las coordenadas donde se va a imprimir"""
+        for n in range(self.__y):
+            print()
         for n in range(self.__height):
+            for n in range(self.__x):
+                print(" ", end="")
             for i in range(self.__width):
                 print("#", end="")
             print()
