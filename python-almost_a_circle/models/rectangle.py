@@ -94,7 +94,7 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) \
 {self.x}/{self.y} - {self.width}/{self.height}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns an argument to each attribute"""
         if len(args) > 0:
             new_list = ["id", "width", "height", "x", "y"]
@@ -102,4 +102,9 @@ class Rectangle(Base):
             for b in new_list:"""
             for a, b in zip(new_list, args):
                 """print('{}/{}'.format(a, b))"""
+                setattr(self, a, b)
+        else:
+            """.items():
+            Return the dictionary's key-value pairs"""
+            for a, b in kwargs.items():
                 setattr(self, a, b)
