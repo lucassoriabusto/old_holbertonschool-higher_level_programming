@@ -93,3 +93,13 @@ class Rectangle(Base):
         variable para poder retornarlo"""
         return f"[Rectangle] ({self.id}) \
 {self.x}/{self.y} - {self.width}/{self.height}"
+
+    def update(self, *args):
+        """Assigns an argument to each attribute"""
+        if len(args) > 0:
+            new_list = ["id", "width", "height", "x", "y"]
+            """for a in args:
+            for b in new_list:"""
+            for a, b in zip(new_list, args):
+                """print('{}/{}'.format(a, b))"""
+                setattr(self, a, b)
