@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """d"""
 
+
 from models.rectangle import Rectangle
 
 
@@ -13,4 +14,5 @@ class Square(Rectangle):
         self.size = size
 
     def __str__(self):
+        """d"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
