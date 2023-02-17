@@ -86,5 +86,5 @@ class Rectangle(Base):
         """Update the class Rectangle
         Con self.variable accedes al valor de la
         variable para poder retornarlo"""
-        return(f"[Rectangle] ({self.id}) \
-{self.x}/{self.y} - {self.width}/{self.height}")
+        return f"[Rectangle] ({self.id}) \
+{self.x}/{self.y} - {self.width}/{self.height}"
