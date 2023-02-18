@@ -98,13 +98,15 @@ class Rectangle(Base):
         """Assigns an argument to each attribute"""
         if len(args) > 0:
             new_list = ["id", "width", "height", "x", "y"]
-            """for a in args:
-            for b in new_list:"""
             for a, b in zip(new_list, args):
-                """print('{}/{}'.format(a, b))"""
                 setattr(self, a, b)
         else:
             """.items():
             Return the dictionary's key-value pairs"""
             for a, b in kwargs.items():
                 setattr(self, a, b)
+
+    def to_dictionary(self):
+        """dddddddddddd"""
+        return {'x': self.x,'y': self.y, 'id': self.id, 
+                'height': self.__height, 'width': self.__width}
