@@ -12,7 +12,6 @@ class Square(Rectangle):
         self.size = size
 
     def __str__(self):
-        """ddddddddddddddddddddddddddddddddddddddddddddddd"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     @property
@@ -29,7 +28,10 @@ class Square(Rectangle):
         self.__height = size
 
     def update(self, *args, **kwargs):
-        """ddddddddddddd"""
+        """Updates the Scuare class by assigning an argument to each attribute
+        zip(): function takes iterables,
+        aggregates them in a tuple, and returns it.
+        setattr():"""
         if len(args) > 0:
             new_list = ["id", "size", "x", "y"]
             for a, b in zip(new_list, args):
@@ -39,6 +41,7 @@ class Square(Rectangle):
             Return the dictionary's key-value pairs"""
             for a, b in kwargs.items():
                 setattr(self, a, b)
-
+    
     def to_dictionary(self):
-        """ssssss"""
+        """Returns the dictionary representation of a Square"""
+        return {'id': self.id, 'size': self.size, 'x': self.x,'y': self.y}
