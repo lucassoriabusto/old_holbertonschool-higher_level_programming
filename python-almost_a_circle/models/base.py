@@ -60,7 +60,7 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """Returns a list of instances"""
-        if path.exists(f"{cls.__name__}.json") is None:
+        if path.exists(f"{cls.__name__}.json") is False:
             return []
         with open(f"{cls.__name__}.json", encoding='utf-8') as f:
             lists_inst = []
