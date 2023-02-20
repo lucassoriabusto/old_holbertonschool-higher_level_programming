@@ -3,6 +3,7 @@
 
 
 import json
+from os import path
 
 
 class Base:
@@ -55,3 +56,16 @@ class Base:
 
         dummy.update(**dictionary)
         return dummy
+    
+    @classmethod
+    def load_from_file(cls):
+        """Returns a list of instances"""
+        if path.exists(f"{cls.__name__}.json") is None:
+            return []
+        with open(f"{cls.__name__}.json", encoding='utf-8') as f:
+            lists_inst = []
+
+            for d in cls.from_json_string(f.read()):
+                lists_inst.append(cls.create(**d))
+        return lists_inst
+
