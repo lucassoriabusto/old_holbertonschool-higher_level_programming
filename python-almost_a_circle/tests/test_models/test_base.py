@@ -7,7 +7,12 @@ from models import base
 Base = base.Base
 
 class  TestBase(unittest.TestCase):
-    """ddddddddddddddddddddd"""
+    """ class for test cases related with the Base class"""
+    def test_noargs(self):
+        """ Test of Base for assigning automatically an ID"""
+        b1 = Base()
+        b2 = Base()
+        self.assertEqual(b1.id, b2.id - 1)
     def test_base(self):
         """fffffffffffffffff"""
         b1 = Base()
