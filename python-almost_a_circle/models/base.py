@@ -31,13 +31,7 @@ class Base:
         if list_objs is None:
             new_list = []
         else:
-            """new_list = [lists.to_dictionary() for lists in list_objs]
-        with open(f"{cls.__name__}.json", mode='w', encoding='utf-8') as f:
-            f.write(cls.to_json_string(new_list))"""
-            
-            filename = cls.__name__ + ".json" 
-        with open(filename, "w", encoding="utf-8") as f:
             new_list = [lists.to_dictionary() for lists in list_objs]
+        with open(f"{cls.__name__}.json", mode='w', encoding='utf-8') as f:
             json_string = cls.to_json_string(new_list)
-            f.write(json_string) 
-            """f.write(cls.to_json_string(new_list))"""
+            f.write(json_string)
