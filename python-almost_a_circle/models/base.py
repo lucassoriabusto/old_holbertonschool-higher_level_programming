@@ -68,4 +68,3 @@ class Base:
             for d in cls.from_json_string(f.read()):
                 lists_inst.append(cls.create(**d))
         return lists_inst
-
